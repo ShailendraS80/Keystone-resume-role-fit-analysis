@@ -6,6 +6,14 @@ Paste a resume and a job description (or upload the resume as a PDF), and it giv
 
 I built this to get real practice with a full stack I hadn't used together before — Express + Postgres on the backend, a from-scratch React frontend, and an actual AI integration that does something a plain wrapper around a chatbot wouldn't do.
 
+## Live demo
+
+**[keystone-resume-role-fit-analysis.vercel.app](https://keystone-resume-role-fit-analysis.vercel.app)**
+
+Sign up with any email, hit **Load a sample** to try it instantly, or upload your own resume as a PDF.
+
+The backend runs on Render's free tier, which spins down after inactivity — so the very first request after a quiet period can take 30-50 seconds to wake back up. Give it a moment on that first load.
+
 ## Screenshots
 
 **Sign in**
@@ -81,6 +89,8 @@ keystone/
 - **File handling:** multer for the upload, pdf-parse for pulling text out of it
 
 ## Running it locally
+
+The live demo above is the fastest way to see it working, but here's how to run it yourself.
 
 You'll need Node 18+, a Postgres database (local install or a free one from [Neon](https://neon.tech)), and a free Gemini key from [aistudio.google.com](https://aistudio.google.com).
 
